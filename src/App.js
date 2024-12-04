@@ -11,6 +11,7 @@ export default function App() {
           <a
             href="https://www.shecodes.io/graduates/122224-kristi-boverhuis"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             Krist Boverhuis
@@ -19,6 +20,7 @@ export default function App() {
           <a
             href="https://github.com/kboverhuis/react-weather-app"
             target="_blank"
+            rel="noreferrer"
           >
             open-sourced on GitHub
           </a>
