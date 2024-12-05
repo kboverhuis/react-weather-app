@@ -1,7 +1,12 @@
 import React from "react";
+import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
+  const apiKey = "8908d7b1834oa44093b7b64af0t393f3";
+  let city = "Orlando";
+  let apiUrl =
+    `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   return (
     <div className="Weather">
       <form>
