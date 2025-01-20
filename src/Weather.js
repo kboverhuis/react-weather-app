@@ -9,17 +9,17 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
     console.log(response.data);
-  setWeatherData({
-    ready: true,
-    coordinates: response.data.coordinates,
-    temperature: response.data.temperature.current,
-    description: response.data.condition.description,
-    wind: response.data.wind.speed,
-    humidity: response.data.temperature.humidity,
-    city: response.data.city,
-    date: new Date(response.data.time * 1000),
-    icon: response.data.condition.icon,
-  });
+    setWeatherData({
+      ready: true,
+      coordinates: response.data.coordinates,
+      temperature: response.data.temperature.current,
+      description: response.data.condition.description,
+      wind: response.data.wind.speed,
+      humidity: response.data.temperature.humidity,
+      city: response.data.city,
+      date: new Date(response.data.time * 1000),
+      icon: response.data.condition.icon,
+    });
   }
 
   function search() {
